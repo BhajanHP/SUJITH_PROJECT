@@ -100,6 +100,46 @@ function Contact(){
     <div id="contact" className="contact-main-div">
     <div className="contact-wrapper">
      
+      
+
+     {/* Left Side - Contact Info */}
+     <div className="contact-info">
+        
+        <h1 className="contact-heading">DON'T BE SHY, SAY HELLO</h1>
+        <div>
+        <h3>Contact Us</h3>
+        <p></p>
+        <div className="contact-detail">
+          {/* <FaPhoneAlt className="icon" />  */}
+          <span><img src={img5} alt="image not found" className="insta-image"></img></span>
+          <span>+91-7975949978</span>
+        </div>
+
+        <div className="contact-detail">
+          {/* <FaEnvelope className="icon" /> */}
+          <span><img src={img4} alt="image not found" className="insta-image"></img></span>
+           <span>brandingbots@gmail.com</span>
+        </div>
+        </div>
+
+        <div>
+        <div className="contact-detail">
+          <h3>FALLOW US ON</h3>
+        </div>
+
+        <div className="contact-detail">
+          {/* <FaPhoneAlt className="icon" />  */}
+          <div className="social-media">
+          <img src={img1} alt="image not found" className="insta-image"></img>
+          <img src={img2} alt="image not found" className="insta-image"></img>
+          <img src={img3} alt="image not found" className="insta-image"></img>
+          </div>
+          </div>
+        </div>
+       
+
+      </div>
+
       {/* Right Side - Form */}
       <div className="contact-form">
         <form ref={form}>
@@ -116,12 +156,12 @@ function Contact(){
 
           <div className="input-group">
             <label>Email</label>
-            <input type="email" name="user_email" required />
+            <input type="email" name="user_email" placeholder="abc@gmail.com" required />
           </div>
 
           <div className="input-group">
-            <label>Phone (optional)</label>
-            <input type="text" name="user_phone" placeholder="xxx-xxx-xxxx" />
+            <label>Phone </label>
+            <input type="text" name="user_phone" placeholder="xxx-xxx-xxxx" required/>
           </div>
 
           <div className="input-group">
@@ -131,39 +171,6 @@ function Contact(){
 
           <input type="submit" value="Send" className="submit-btn" />
         </form>
-      </div>
-
-     {/* Left Side - Contact Info */}
-     <div className="contact-info">
-        <h1>Contact Us</h1>
-        <h2>DON'T BE SHY, SAY HELLO</h2>
-        <p></p>
-        <div className="contact-detail">
-          {/* <FaPhoneAlt className="icon" />  */}
-          <span><img src={img5} alt="image not found" className="insta-image"></img></span>
-          <span>+91-7975949978</span>
-        </div>
-
-        <div className="contact-detail">
-          {/* <FaEnvelope className="icon" /> */}
-          <span><img src={img4} alt="image not found" className="insta-image"></img></span>
-           <span>brandingbots@gmail.com</span>
-        </div>
-
-        <div className="contact-detail">
-          <h1>FALLOW US ON</h1>
-        </div>
-
-        <div className="contact-detail">
-          {/* <FaPhoneAlt className="icon" />  */}
-          <div className="social-media">
-          <img src={img1} alt="image not found" className="insta-image"></img>
-          <img src={img2} alt="image not found" className="insta-image"></img>
-          <img src={img3} alt="image not found" className="insta-image"></img>
-          </div>
-        </div>
-       
-
       </div>
 
     </div>
