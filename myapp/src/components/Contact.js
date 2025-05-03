@@ -91,49 +91,69 @@ import img2 from './Images/youtube.png';
 import img3 from './Images/facebook.png';
 import img4 from './Images/mail.png';
 import img5 from './Images/phone-call.png';
+import emailjs from '@emailjs/browser';
 // import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact(){
   const form = useRef();
+ 
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_28baj5i', 'template_7dhspwn', form.current, {
+          publicKey: '9k0Wj57Ab_b90yeYH',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
 
   return (
-    <div id="contact" className="contact-main-div">
-    <div className="contact-wrapper">
+    <div id="contact" className="contact-main-div" >
+    <div className="contact-wrapper" data-aos="fade-up">
      
       
 
      {/* Left Side - Contact Info */}
      <div className="contact-info">
         
-        <h1 className="contact-heading">DON'T BE SHY, SAY HELLO</h1>
+        <h1 className="contact-heading">DON'T BE SHY, SAY HELLO!</h1>
         <div>
-        <h3>Contact Us</h3>
+        <h3 style={{ color: '#E0E0E0' ,marginTop:'30px'}}>Contact Us</h3>
         <p></p>
         <div className="contact-detail">
           {/* <FaPhoneAlt className="icon" />  */}
           <span><img src={img5} alt="image not found" className="insta-image"></img></span>
-          <span>+91-7975949978</span>
+          <span style={{ color: '#E0E0E0' }}>+91-7975949978</span>
         </div>
 
         <div className="contact-detail">
           {/* <FaEnvelope className="icon" /> */}
           <span><img src={img4} alt="image not found" className="insta-image"></img></span>
-           <span>brandingbots@gmail.com</span>
+           <span style={{ color: '#E0E0E0' }}>brandingbots@gmail.com</span>
+           <hr></hr>
         </div>
         </div>
 
         <div>
-        <div className="contact-detail">
+        {/* <div className="contact-detail">
           <h3>FALLOW US ON</h3>
-        </div>
+        </div> */}
 
         <div className="contact-detail">
           {/* <FaPhoneAlt className="icon" />  */}
-          <div className="social-media">
+          {/* <div className="social-media">
           <img src={img1} alt="image not found" className="insta-image"></img>
           <img src={img2} alt="image not found" className="insta-image"></img>
           <img src={img3} alt="image not found" className="insta-image"></img>
-          </div>
+          </div> */}
           </div>
         </div>
        
@@ -142,30 +162,31 @@ function Contact(){
 
       {/* Right Side - Form */}
       <div className="contact-form">
-        <form ref={form}>
+      <form ref={form} onSubmit={sendEmail}>
+        {/* <form ref={form}> */}
           <div className="name-fields">
             <div className="input-group">
-              <label>First Name</label>
+              <label style={{ color: '#E0E0E0' }}>First Name</label>
               <input type="text" name="first_name" required />
             </div>
             <div className="input-group">
-              <label>Last Name</label>
+              <label style={{ color: '#E0E0E0' }}>Last Name</label>
               <input type="text" name="last_name" required />
             </div>
           </div>
 
           <div className="input-group">
-            <label>Email</label>
+            <label style={{ color: '#E0E0E0' }}>Email</label>
             <input type="email" name="user_email" placeholder="abc@gmail.com" required />
           </div>
 
           <div className="input-group">
-            <label>Phone </label>
+            <label style={{ color: '#E0E0E0' }}>Phone </label>
             <input type="text" name="user_phone" placeholder="xxx-xxx-xxxx" required/>
           </div>
 
           <div className="input-group">
-            <label>Message</label>
+            <label style={{ color: '#E0E0E0' }}>Message</label>
             <textarea name="message" placeholder="Type your message ..." required></textarea>
           </div>
 
