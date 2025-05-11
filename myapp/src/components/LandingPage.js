@@ -96,7 +96,7 @@ function CollapsibleNavbar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto" style={{ gap: '5px' }}> {/* Added gap between items */}
               <Nav.Link 
-                href="#AboutUs" 
+                href="#About" 
                 onClick={() => setExpanded(false)} 
                 style={navLinkStyle}
                 className="nav-hover-effect"

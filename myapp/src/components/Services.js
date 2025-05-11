@@ -18,7 +18,7 @@ function Services(){
     return(
        
         <div id="OurServices" data-aos="fade-up" > 
-            <h1 className='serviceHeading'  data-aos="fade-up" style={{ fontWeight: 700 }}> Our Services</h1>
+            <h1 className='serviceHeading'  data-aos="fade-up" style={{ fontWeight: 700 }} id='Services'> Our Services</h1>
         <div className='services card-container'>
         
             {/* <Card image={img1} heading='Branding and Creative Solution' content='Bringing Brands to Life Through Innovative and Design'/>

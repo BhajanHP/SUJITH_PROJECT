@@ -29,61 +29,67 @@ import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     AOS.init({ duration: 1200 });
     const delay = setTimeout(() => setLoading(false), 4000);
-    return () => clearTimeout(delay);
+    
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 1024); 
+    };
+    checkIfMobile();
+    
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => {
+      clearTimeout(delay);
+      window.removeEventListener('resize', checkIfMobile);
+    };
   }, []);
 
   if (loading) return <Loader />;
   return (
     <>
-    <AnimatedCursor
-      innerSize={8}
-      outerSize={35}
-      innerScale={1}
-      outerScale={2}
-      outerAlpha={0}
-      hasBlendMode={true}
-      innerStyle={{
-        backgroundColor:"#51b6ff" // Customize your color
-      }}
-      outerStyle={{
-        border: '3px solid #51b6ff' // Match inner color
-      }}
-    />
-    <Router>
-      <Routes>
-        {/* Show "Creative" Page Alone When Navigating */}
-        <Route path="/creative" element={<Creative />} />
-        <Route path="/ecommerce" element={<Ecommerce />} />
-        <Route path="/branding" element={<Branding />} />
-        <Route path="/socialMediaMarketing" element={<SocialMediaMarketing />} />
-        <Route path="/SEO" element={<SearchEngineOpt />} />
-        <Route path="/googleAds" element={<GoogleAds />} />
+      {!isMobile && (
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "#51b6ff"
+          }}
+          outerStyle={{
+            border: '3px solid #51b6ff'
+          }}
+        />
+      )}
+      <Router>
+        <Routes>
+          <Route path="/creative" element={<Creative />} />
+          <Route path="/ecommerce" element={<Ecommerce />} />
+          <Route path="/branding" element={<Branding />} />
+          <Route path="/socialMediaMarketing" element={<SocialMediaMarketing />} />
+          <Route path="/SEO" element={<SearchEngineOpt />} />
+          <Route path="/googleAds" element={<GoogleAds />} />
 
-        {/* Show Other Sections Only for Home Page */}
-        <Route path="/" element={
-          <>
-            <FirstPage />
-            {/* <LandingPage />
-            <PathSlider /> */}
-            <About />
-            <Services />
-            <Projects />
-            <ChooseUS />
-            <LastComponent />
-            {/* <Review />
-            <Contact />
-            <Footer /> */}
-          </>
-        } />
-      </Routes>
-    </Router>
-     </>
+          <Route path="/" element={
+            <>
+              <FirstPage />
+              <About />
+              <Services />
+              <Projects />
+              <ChooseUS />
+              <LastComponent />
+            </>
+          } />
+        </Routes>
+      </Router>
+    </>
   );
 }
-
 
 export default App;

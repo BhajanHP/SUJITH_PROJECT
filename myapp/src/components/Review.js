@@ -52,7 +52,6 @@ export default function Review() {
               The use of colors fonts and imagery is spot on for an e-commerce listing"
             </p>
             <div className="mt-5 mb-4">
-            {/* src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" */}
               <img
               src={img1}
                 className="rounded-circle img-fluid shadow-1-strong personImg"
@@ -66,41 +65,39 @@ export default function Review() {
 
           <MDBCarouselItem itemId={2}>
           <p  className="testi-margin" style={{ color: '#E0E0E0' }}>
-          {/* "I Love how the designs highlight the product's key feature in such an attract way! 
-          The use of colors fonts and imagery is spot on for an e-commerce listing" */}
-              "Ads performance increased our budget diAds performance increased Our budget didn't the team
-               delivered outstanding designs that perfectly 
-               {/* capture the essence of the brand." */ }
+         
+              
+          "The design work delivered was nothing short of outstanding! The visuals were clean, compelling, and designed to convert.
+               Their expertise in e-commerce creatives truly makes them a go-to agency for high-impact branding!"
             </p>
             <div className="mt-5 mb-4">
-            {/* src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" */}
               <img
-                src={img2}
+                src={img3}
                 className="rounded-circle img-fluid shadow-1-strong personImg"
                 alt="testimonial"
                 width="100"
                 height="100"
               />
             </div>
-            <p className=" mb-0 reviewerName" style={{ color: '#E0E0E0' }}>- Shreyas (skybean)</p>
+            <p className=" mb-0 reviewerName" style={{ color: '#E0E0E0' }}>- Faraz (Love kaapi)</p>
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId={3}>
           <p  className="testi-margin" style={{ color: '#E0E0E0' }}>
-              "The design work delivered was nothing short of outstanding! The visuals were clean, compelling, and designed to convert.
-               Their expertise in e-commerce creatives truly makes them a go-to agency for high-impact branding!"
+
+          "Ads performance increased our budget diAds performance increased Our budget didn't the team
+          delivered outstanding designs that perfectly 
             </p>
-            {/* src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" */}
             <div className="mt-5 mb-4">
               <img
-               src={img3}
+               src={img2}
                 className="rounded-circle img-fluid shadow-1-strong personImg"
                 alt="testimonial"
                 width="100"
                 height="100"
               />
             </div>
-            <p className=" mb-0" style={{ color: '#E0E0E0' }}>- Faraz (Love kaapi)</p>
+            <p className=" mb-0" style={{ color: '#E0E0E0' }}>- Shreyas (skybean)</p>
           </MDBCarouselItem>
         </MDBCarousel>
       </MDBCol>

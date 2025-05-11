@@ -79,7 +79,7 @@ function Contact() {
 
             <div className="contact-detail contact-detail2">
               <span><img src={img4} alt="image not found" className="insta-image"></img></span>
-              <span style={{ color: '#E0E0E0' }}>brandingbots@gmail.com</span>
+              <span style={{ color: '#E0E0E0' }}>brandingbots5@gmail.com</span>
               <hr></hr>
             </div>
           </div>

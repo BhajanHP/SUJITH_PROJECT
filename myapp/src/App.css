@@ -909,6 +909,9 @@ textarea {
   background-color:'red';
 }
 
+
+
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .mainFooter {
@@ -1001,6 +1004,10 @@ textarea {
 
     #logo{
       margin-left: 10px;
+    }
+
+    html {
+      overflow-x: hidden;
     }
 
 }
