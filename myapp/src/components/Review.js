@@ -39,7 +39,7 @@ import img3 from './Images/person1.jpeg';
 
 export default function Review() {
   return (
-    <MDBRow className="py-5 text-center" id="Testimonials" data-aos="fade-up">
+    <MDBRow className="py-5 text-center" id="Testimonials" data-aos="fade-up" style={{ width: '100%', overflow: 'hidden' }}>
       <MDBCol md="12">
         <h1 className="Testimonial-h2" data-aos="fade-right" style={{ fontWeight: 600 }} >Testimonial</h1>
         <h3 className="Testimonial-h3" data-aos="fade-left" style={{ fontWeight: 600 }}>Review That Inspire Trust</h3>

@@ -81,7 +81,7 @@ function App() {
               <FirstPage />
               <About />
               <Services />
-              <Projects />
+              <Projects />    
               <ChooseUS />
               <LastComponent />
             </>

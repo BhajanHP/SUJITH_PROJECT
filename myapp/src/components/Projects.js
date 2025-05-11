@@ -57,7 +57,6 @@ const VideoBox = ({ src, poster, isCenter, className }) => {
         />
       )}
 
-      {/* Always show control button (centered) */}
       <button 
         onClick={(e) => {
           e.stopPropagation();
@@ -131,7 +130,6 @@ const VideoBox = ({ src, poster, isCenter, className }) => {
         className="video-element"
         playsInline
         loop
-        // Keep unmuted but note that autoplay may still be blocked
         muted={false}
         style={{
           width: '100%',
@@ -157,7 +155,7 @@ function Projects() {
   }, []);
 
   return (
-    <div id="projects">
+   <div id="projects" style={{ overflowX: 'hidden' }}>
       <h1 className="projects-container-h1" data-aos="fade-right">
         Check Our Projects With Real Results
       </h1>
@@ -168,7 +166,8 @@ function Projects() {
         Explore our work how we can elevate your brand to new heights
       </p>
 
-      <div className="video-grid" data-aos="zoom-in">
+      {/* <div className="video-grid" data-aos="zoom-in"> */}
+      <div className="video-grid" style={{ width: '100%', overflow: 'hidden' }}>
         <VideoBox src={vid1} poster={img1}/>
         <VideoBox src={vid2} poster={img2} />
         <VideoBox 
