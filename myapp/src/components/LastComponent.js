@@ -10,8 +10,6 @@ function LastComponent(){
             <div className="mainFooterDiv">
             <Footer />
             </div>
-
-          
         </div>
     )
 }

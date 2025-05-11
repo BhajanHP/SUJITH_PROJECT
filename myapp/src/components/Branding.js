@@ -22,7 +22,7 @@ function Branding() {
 
       <img src={img} alt="Branding and Creative image not found" className="sub-page-images" data-aos="fade-up"/>
       <div className="sub-page-div">
-      <h1 className="sub-page-heading" data-aos="zoom-in"> Branding and Creative Solutions</h1>
+      <h1 className="sub-page-heading" data-aos="fade-up"> Branding and Creative Solutions</h1>
       {/* font-family "Barlow Condensed", sans-serif  */}
 
       <h6 style={{color: "#8D8F8E"}} data-aos="fade-up"> Branding bots works with organizations across a diverse spectrum of industries, 
@@ -43,7 +43,7 @@ function Branding() {
             <li>Printing (Digital/Offset) </li>
           </ul>
           </div>
-          <div  className="footerDiv"  style={{ bottom: '0px',   width: '100%'}}>
+          <div  className="footerDiv"  style={{ bottom: '0px',   width: '100%'}} >
           <Footer/>
           </div>
           

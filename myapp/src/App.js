@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({ duration: 1200 });
-    const delay = setTimeout(() => setLoading(false), 2000);
+    const delay = setTimeout(() => setLoading(false), 4000);
     return () => clearTimeout(delay);
   }, []);
 

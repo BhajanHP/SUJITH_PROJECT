@@ -1,5 +1,5 @@
 import '../App.css';
-import img from './watch.png';
+// import img from './watch.png';
 
 function Card4(props){
     return(

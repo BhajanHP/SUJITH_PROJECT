@@ -20,8 +20,8 @@ function SocialMediaMarketing(){
         <FiLogOut size={30} color="white" title="Go to Home" />
       </div>
 
-      <img src={img} alt="Branding and Creative image not found" className="sub-page-images" />
-      <div className="sub-page-div">
+      <img src={img} alt="Branding and Creative image not found" className="sub-page-images" data-aos="fade-up"/>
+      <div className="sub-page-div" data-aos="fade-up">
       <h1 className="sub-page-heading">Engage, Influence, Convert</h1>
       {/* font-family "Barlow Condensed", sans-serif  */}
 

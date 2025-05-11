@@ -1,8 +1,12 @@
 import '../App.css';
 import Card4 from './Card4';
-import img1 from './Images/3d-proj-p.jpg';
-import img2 from './Images/E-com-p.jpg';
-import img3 from './Images/BC-p.jpg';
+import img1 from './Images/Cover-1.jpg';
+import img2 from './Images/cover-2.jpg';
+import img3 from './Images/cover-3.jpg';
+import img4 from './Images/cover-4.jpg';
+import img5 from './Images/cover-5.jpg';
+import img6 from './Images/cover-6.jpg';
+// import img3 from './Images/BC-p.jpg';
 import vid1 from './Images/3d-vid.mp4';
 import vid2 from './Images/love-kaapi-vid.mp4';
 import vid3 from './Images/prod-ani-vid.mp4';
@@ -15,6 +19,20 @@ import 'animate.css';
 const VideoBox = ({ src, poster, isCenter, className }) => {
   const videoRef = useRef(null);
   const [showThumbnail, setShowThumbnail] = useState(true);
+
+  // changes for play button
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileOrTablet(window.innerWidth <= 768); // Changed to 768 for tablet detection
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
@@ -31,6 +49,19 @@ const VideoBox = ({ src, poster, isCenter, className }) => {
     }
   };
 
+  const handlePlayButtonClick = () => {
+    if (isMobileOrTablet && videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setShowThumbnail(true);
+      } else {
+        videoRef.current.play().catch(() => {});
+        setShowThumbnail(false);
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <div
       className={`video-wrapper ${isCenter ? 'center-video' : ''} ${className || ''}`}
@@ -44,7 +75,7 @@ const VideoBox = ({ src, poster, isCenter, className }) => {
           alt="Thumbnail"
           className="video-thumbnail"
           style={{
-            position: 'absolute',
+            // position: 'absolute',
             width: '100%',
             height: '100%',
             objectFit: 'cover',
@@ -53,13 +84,68 @@ const VideoBox = ({ src, poster, isCenter, className }) => {
           }}
         />
       )}
+
+{isMobileOrTablet && showThumbnail && (
+  <button 
+    onClick={handlePlayButtonClick}
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      zIndex: 3,
+      background: 'rgba(0, 0, 0, 0.7)',
+      border: 'none',
+      borderRadius: '50%',
+      width: '60px',
+      height: '60px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+      color: 'white',
+      fontSize: '24px',
+      paddingLeft: '5px' // Adjusts the play symbol position
+    }}
+  >
+    ▶
+  </button>
+)}
+
+{isMobileOrTablet && isPlaying && (
+  <button 
+    onClick={handlePlayButtonClick}
+    style={{
+      position: 'absolute',
+      top: '10px',
+      right: '10px',
+      zIndex: 3,
+      background: 'rgba(0, 0, 0, 0.7)',
+      border: 'none',
+      borderRadius: '50%',
+      width: '40px',
+      height: '40px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+      color: 'white',
+      fontSize: '16px'
+    }}
+  >
+    ❚❚
+  </button>
+)}  
+
+
+
       <video
         ref={videoRef}
         src={src}
         className="video-element"
         playsInline
         loop
-        muted
+        // muted
         style={{
           width: '100%',
           height: '100%',
@@ -76,7 +162,8 @@ function Projects() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileOrTablet(window.innerWidth <= 568);
+      // setIsMobileOrTablet(window.innerWidth <= 568);
+      setIsMobileOrTablet(window.innerWidth <= 768);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -96,11 +183,13 @@ function Projects() {
       </p>
 
       <div className="video-grid" data-aos="zoom-in">
-        <VideoBox src={vid1} poster={img1} />
-        <VideoBox src={vid2} poster={img2} />
-        <VideoBox src={isMobileOrTablet ? vid6 : vid5} poster={img3} isCenter={!isMobileOrTablet} />
-        <VideoBox src={vid3} poster={img2} />
-        <VideoBox src={vid4} poster={img2} />
+        {/* for thumbnail Poster Image */}
+        <VideoBox src={vid1}  poster={img1}/>
+        <VideoBox src={vid2}  poster={img2} />
+        {/* <VideoBox src={isMobileOrTablet ? vid6 : vid5} poster={img3} isCenter={!isMobileOrTablet} /> */}
+        <VideoBox src={isMobileOrTablet ? vid6 : vid5} isCenter={!isMobileOrTablet} poster={isMobileOrTablet? img6:img5}/>
+        <VideoBox src={vid3}  poster={img3} data-aos="zoom-in"/>
+        <VideoBox src={vid4} poster={img4} data-aos="zoom-in"/>
       </div>
     </div>
   );

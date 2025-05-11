@@ -74,14 +74,13 @@ function CollapsibleNavbar() {
       >
         <Container>
           <Navbar.Brand href="#home" style={{ color: 'white' }}>
-            <img
-              src={img2}
-              alt="Logo"
-              height="60" // Increased logo size
-              className="d-inline-block align-top"
-              id="logo"
-              style={{ marginLeft: '-20px' }}
-            />
+          <img
+          src={img2}
+          alt="Logo"
+          height="50"
+          className="d-inline-block align-top"
+          id="logo"
+          />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -174,7 +173,7 @@ function CollapsibleNavbar() {
 // Style object for nav links
 const navLinkStyle = {
   color: 'white',
-  fontWeight: '500',
+  fontWeight: '400',
   letterSpacing: '1px',
 };
 

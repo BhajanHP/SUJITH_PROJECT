@@ -3,13 +3,21 @@ import '../App.css';
 // components/Loader.js
 import React from 'react';
 import '../App.css';
-import img2 from './Images/afn.png';
+import img2 from './Images/web.mp4';
 
 function Loader() {
   return (
     <div className="loader-container">
       {/* <div className="branding-logo">Branding Bots</div> */}
-      <img src={img2} alt="logo not found"></img>
+      <video
+  src={img2}
+  className="startingLogo"
+  autoPlay
+  muted
+  loop
+  playsInline
+></video>
+
       {/* <div className="spinner"></div> */}
     </div>
   );

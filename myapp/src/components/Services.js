@@ -19,7 +19,7 @@ function Services(){
        
         <div id="OurServices" data-aos="fade-up" > 
             <h1 className='serviceHeading'  data-aos="fade-up" style={{ fontWeight: 700 }}> Our Services</h1>
-        <div className='services card-container' data-aos="zoom-in">
+        <div className='services card-container'>
         
             {/* <Card image={img1} heading='Branding and Creative Solution' content='Bringing Brands to Life Through Innovative and Design'/>
             <Card image={img2} heading='Creative and Capture' content='Turning ideas into impactful digital experinces'/>
@@ -39,28 +39,28 @@ function Services(){
         </div> */}
 
 
-        <div className='card'>
+        <div className='card'  data-aos="zoom-in">
             <img src={img1} alt="image" height='50px' width='50px' className='servisesImg'></img>
            <b> <h6 className='card-h3'>Branding and Creative Solution</h6></b>
             <p className='card-p'>Bringing Brands to Life Through Innovative Design</p>
             <button className='know-more-button' onClick={()=>navigate("/branding")}>Know more</button>
            </div>
 
-           <div className='card'>
+           <div className='card'  data-aos="zoom-in">
             <img src={img2} alt="image" height='50px' width='50px' className='servisesImg'></img>
            <b> <h6 className='card-h3'>Creative and Capture</h6></b>
             <p className='card-p'>Turning ideas into impactful digital experinces</p>
             <button className='know-more-button' onClick={()=>navigate("/creative")}>Know more</button>
            </div>
 
-           <div className='card'>
+           <div className='card' data-aos="zoom-in">
             <img src={img3} alt="image" height='50px' width='50px' className='servisesImg'></img>
            <b> <h6 className='card-h3'>Ecommerce Creative Solution</h6></b>
             <p className='card-p'>Engaging visuals. Conversion driven design</p>
             <button className='know-more-button' onClick={()=>navigate("/ecommerce")}>Know more</button>
            </div>
 
-           <div className='card'>
+           <div className='card'  data-aos="zoom-in">
             <img src={img4} alt="image" height='50px' width='50px' className='servisesImg'></img>
            <b> <h6 className='card-h3'>Social media marketing</h6></b>
             <p className='card-p'>Engage, grow and convert with strategic content</p>
@@ -68,14 +68,14 @@ function Services(){
            </div>
 
            
-           <div className='card'>
+           <div className='card'  data-aos="zoom-in">
             <img src={img5} alt="image" height='50px' width='50px' className='servisesImg'></img>
            <b> <h6 className='card-h3'>Search Engine Optimization</h6></b>
             <p className='card-p'>Boost Visibility , Drive organix growth</p>
             <button className='know-more-button' onClick={()=>navigate("/SEO")}>Know more</button>
            </div>
 
-           <div className='card'>
+           <div className='card'  data-aos="zoom-in">
             <img src={img6} alt="image" height='50px' width='50px' className='servisesImg'></img>
            <b> <h6 className='card-h3'>Google Ads, PPC</h6></b>
             <p className='card-p'>Maximize reach. Optimize conversions</p>

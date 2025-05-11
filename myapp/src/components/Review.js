@@ -32,7 +32,7 @@ import {
   MDBRow,
 } from "mdb-react-ui-kit";
 
-import img1 from './Images/3d-proj-p.jpg';
+import img1 from './Images/person3.jpg';
 import img2 from './Images/person2.jpeg';
 import img3 from './Images/person1.jpeg';
 
@@ -66,8 +66,11 @@ export default function Review() {
 
           <MDBCarouselItem itemId={2}>
           <p  className="testi-margin" style={{ color: '#E0E0E0' }}>
+          {/* "I Love how the designs highlight the product's key feature in such an attract way! 
+          The use of colors fonts and imagery is spot on for an e-commerce listing" */}
               "Ads performance increased our budget diAds performance increased Our budget didn't the team
-               delivered outstanding designs that perfectly capture the essence of the brand."
+               delivered outstanding designs that perfectly 
+               {/* capture the essence of the brand." */ }
             </p>
             <div className="mt-5 mb-4">
             {/* src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" */}
@@ -79,7 +82,7 @@ export default function Review() {
                 height="100"
               />
             </div>
-            <p className="mb-0 reviewerName" style={{ color: '#E0E0E0' }}>- Shreyas (skybean)</p>
+            <p className=" mb-0 reviewerName" style={{ color: '#E0E0E0' }}>- Shreyas (skybean)</p>
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId={3}>

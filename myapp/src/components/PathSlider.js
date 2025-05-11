@@ -22,21 +22,25 @@ export default function PathSlider() {
     <MDBContainer>
       <MDBRow className="align-items-center py-5" data-aos="fade-up">
         {/* First Column - Stylized Heading */}
-        <MDBCol md="4" className="text-center" data-aos="zoom-in">
-          {/* <h1  data-aos="zoom-in" id="main-page-h1" className='brand-shadow'>
-            POWERING BRANDS DELIVERING IMPACT */}
-            {/* <br /> */}
-             <h1 className='brand-shadow'>POWERING</h1>
-            <h1 className='brand-shadow'>BRANDS</h1>
-            <h1 className='brand-shadow'>DELIVERING</h1>
-            <h1 className='brand-shadow'>IMPACT</h1>
-           
-            
-          {/* <p style={styles.subText}data-aos="zoom-in"> Creative Agency</p> */}
-        </MDBCol>
+        <MDBCol md="5" className="text-center heading-phone" data-aos="zoom-in">
+        <div className="brand-heading-container">
+        <div className="brand-heading-container">
+  <h6 className='brand-shadow'>We're a Creative Agency</h6>
+  <h6 className='brand-shadow'>Crafting Experiences</h6>
+  <h6 className='brand-shadow'>
+  That Captivate <span style={{ WebkitTextFillColor: '#4eb8ff' }}>Connect</span>
+</h6>
+
+<h6 className='brand-shadow branding-h6'>
+  <span style={{WebkitTextFillColor: '#4eb8ff' }}>and Convert</span>
+</h6>
+
+</div>
+</div>
+</MDBCol>
 
         {/* Second Column - Carousel */}
-        <MDBCol md="8">
+        <MDBCol md="7">
           <MDBCarousel showControls dark interval={2000} data-aos="zoom-in">
             <MDBCarouselItem itemId={1}>
               <div className="mt-5 mb-4">
