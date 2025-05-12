@@ -24,20 +24,16 @@ export default function PathSlider() {
         {/* First Column - Stylized Heading */}
         <MDBCol md="5" className="text-center heading-phone" data-aos="zoom-in">
         <div className="brand-heading-container">
-        <div className="brand-heading-container">
-  <h6 className='brand-shadow'>We're a Creative Agency</h6>
-  <h6 className='brand-shadow'>Crafting Experiences</h6>
-  <h6 className='brand-shadow'>
-  That Captivate <span style={{ WebkitTextFillColor: '#4eb8ff' }}>Connect</span>
-</h6>
-
-<h6 className='brand-shadow branding-h6'>
-  <span style={{WebkitTextFillColor: '#4eb8ff' }}>and Convert</span>
-</h6>
-
-</div>
-</div>
-</MDBCol>
+           <h6 className='brand-shadow'>We're a Creative Agency</h6>
+          <h6 className='brand-shadow'>Crafting Experiences</h6>
+          <h6 className='brand-shadow'>
+          That Captivate <span style={{ WebkitTextFillColor: '#4eb8ff' }}>Connect</span>
+          </h6>
+          <h6 className='brand-shadow branding-h6'>
+          <span style={{WebkitTextFillColor: '#4eb8ff' }}>and Convert</span>
+        </h6>
+        </div>
+       </MDBCol>
 
         {/* Second Column - Carousel */}
         <MDBCol md="7">

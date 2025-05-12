@@ -7,28 +7,34 @@ import img11 from './Images/linkdin.png';
 import React from 'react';
 
 function Footer(){
-    return(
-        <div className="footer">
-         <footer className='mainFooter'>
-                   <img src={img3} alt="Logo not found" className="footer-logo" />
-                    <div className="footer-icons">
-                    <a href="https://www.instagram.com/branding.bots?igsh=MXZrNGljajlwem9tcw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                    <img src={img8} alt="Instagram image not found" className="footer-icon" /></a>
-                    <a href="https://www.youtube.com/@BrandingBots-25" target="_blank" rel="noopener noreferrer">
-                    <img src={img9} alt="Youtube image not found" className="footer-icon" /></a>
-                      <a href="https://www.facebook.com/profile.php?id=61572486230681&sk=photos" target="_blank" rel="noopener noreferrer">
-                      <img src={img10} alt="Facbook image not found" className="footer-icon" /></a>
-                      <a href="linkedin.com/in/branding-bots-971a71349" target="_blank" rel="noopener noreferrer">
-                      <img src={img11} alt="LinkedIn not found" className="footer-icon" /></a>
-                    </div>
-                    
-                  </footer>
-                  <hr className='footerhr'></hr>
-                  <p className='footer-p'>© Copyright 2025, All Rights Reserved by BrandingBots </p>
-                  <br></br>
-        </div>
-    )
+  return (
+    <div className="footerDiv">
+      <div className="footer">
+        <footer className='mainFooter'>
+          <img src={img3} alt="Logo not found" className="footer-logo" />
+          <div className="footer-icons">
+            <a href="https://www.instagram.com/branding.bots" target="_blank" rel="noopener noreferrer">
+              <img src={img8} alt="Instagram" className="footer-icon" />
+            </a>
+            <a href="https://www.youtube.com/@BrandingBots-25" target="_blank" rel="noopener noreferrer">
+              <img src={img9} alt="YouTube" className="footer-icon" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572486230681&sk=photos" target="_blank" rel="noopener noreferrer">
+              <img src={img10} alt="Facebook" className="footer-icon" />
+            </a>
+            <a href="https://linkedin.com/in/branding-bots-971a71349" target="_blank" rel="noopener noreferrer">
+              <img src={img11} alt="LinkedIn" className="footer-icon" />
+            </a>
+          </div>
+        </footer>
+        <hr className='footerhr' />
+        <p className='footer-p'>© Copyright 2025, All Rights Reserved by BrandingBots</p>
+        <br />
+      </div>
+    </div>
+  );
 }
+
 
 export default Footer;
 

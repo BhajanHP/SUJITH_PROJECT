@@ -8,7 +8,7 @@ import img5 from './Images/cover-5.jpg';
 import img6 from './Images/cover-6.jpg';
 import vid1 from './Images/3d-vid.mp4';
 import vid2 from './Images/love-kaapi-vid.mp4';
-import vid3 from './Images/prod-ani-vid.mp4';
+import vid3 from './Images/prod-ani-video.mp4';
 import vid4 from './Images/E-com-vid.mp4';
 import vid5 from './Images/nova_fit.mp4'; 
 import vid6 from './Images/nova_fit1.mp4'; 
