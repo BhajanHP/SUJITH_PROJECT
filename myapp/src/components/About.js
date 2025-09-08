@@ -1,15 +1,52 @@
+// import '../App.css';
+
+// function About(){
+//     return(
+//         <div id= "AboutUs"className='about'>
+//             <h1  style={{fontWeight: 700 }} className='aboutUs' id='About'>About Us</h1>
+//             <p style={{fontWeight: 500 }} className='aboutUs-p'> Branding Bots Digital Solutions brings together expertise and dedication to craft cutting-edge marketing strategies. 
+//                 With a proven track record of success, we’ve partnered with international clients to deliver impactful, 
+//                 results-driven solutions tailored to your business goals. Driven by a passion for digital excellence,
+//                  we’re committed to helping brands thrive in the ever-evolving digital landscape..</p>
+
+//                <hr className='Abouthr'></hr>  
+//         </div>
+//     )
+// }
+
+// export default About;
+
+
 import '../App.css';
 
 function About(){
     return(
-        <div id= "AboutUs"className='about'>
-            <h1  style={{fontWeight: 700 }} className='aboutUs' id='About'>About Us</h1>
-            <p style={{fontWeight: 500 }} className='aboutUs-p'> Branding Bots Digital Solutions brings together expertise and dedication to craft cutting-edge marketing strategies. 
+        <div id="AboutUs" className='about'>
+            <h1 style={{ fontWeight: 700 }} className='aboutUs' id='About'>About Us</h1>
+            <p style={{ fontWeight: 500 }} className='aboutUs-p'>
+                Branding Bots Digital Solutions brings together expertise and dedication to craft cutting-edge marketing strategies. 
                 With a proven track record of success, we’ve partnered with international clients to deliver impactful, 
                 results-driven solutions tailored to your business goals. Driven by a passion for digital excellence,
-                 we’re committed to helping brands thrive in the ever-evolving digital landscape..</p>
+                we’re committed to helping brands thrive in the ever-evolving digital landscape..
+            </p>
 
-               <hr className='Abouthr'></hr>  
+            {/* New Stats Section */}
+            <div className="about-stats">
+                <div>
+                    <h2>15+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div>
+                    <h2>28+</h2>
+                    <p>Projects</p>
+                </div>
+                <div>
+                    <h2>5+</h2>
+                    <p>Experience</p>
+                </div>
+            </div>
+
+            <hr className='Abouthr'></hr>  
         </div>
     )
 }

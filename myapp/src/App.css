@@ -1363,3 +1363,29 @@ video::-webkit-media-controls {
 .popup-content {
   text-align: center;
 }
+
+
+
+
+
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* space between items */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-stats h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.about-stats p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #555;
+}
