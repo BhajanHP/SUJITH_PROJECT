@@ -30,21 +30,7 @@ function About(){
                 we’re committed to helping brands thrive in the ever-evolving digital landscape..
             </p>
 
-            {/* New Stats Section */}
-            <div className="about-stats">
-                <div>
-                    <h2>15+</h2>
-                    <p>Happy Clients</p>
-                </div>
-                <div>
-                    <h2>28+</h2>
-                    <p>Projects</p>
-                </div>
-                <div>
-                    <h2>5+</h2>
-                    <p>Experience</p>
-                </div>
-            </div>
+           
 
             <hr className='Abouthr'></hr>  
         </div>

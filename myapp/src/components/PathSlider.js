@@ -116,6 +116,9 @@ export default function PathSlider() {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+
+
+
     </div>
   );
 }
