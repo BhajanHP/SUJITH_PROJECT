@@ -1,6 +1,7 @@
 import PathSlider from "./PathSlider";
 import CollapsibleNavbar from "./LandingPage";
 import AboutUs from "./AboutUs";
+import FloatingButtons from "./FloatingButtons";
 
 function FirstPage(){
     return(
@@ -8,6 +9,7 @@ function FirstPage(){
             <CollapsibleNavbar />
             <PathSlider />
             <AboutUs />
+            <FloatingButtons />
 
         </div>
     )

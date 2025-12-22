@@ -11,6 +11,16 @@ import Services from './components/Services';
 import ChooseUS from './components/ChooseUS';
 import Review from './components/Review';
 import Projects from './components/Projects';
+
+
+import ProjectsUpd from './components/ProjectsUpd';
+import ProjectDetails from "./components/ProjectDetails";
+import ProjectDetails2 from "./components/ProjectDetails2";
+import ProjectDetails3 from "./components/ProjectDetails3";
+import ProjectDetails4 from "./components/ProjectDetails4";
+import ProjectDetails5 from "./components/ProjectDetails5";
+import ProjectDetails6 from "./components/ProjectDetails6";
+
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -25,6 +35,10 @@ import LastComponent from './components/LastComponent';
 import PathSlider from './components/PathSlider';
 import FirstPage from './components/FirstPage';
 import AnimatedCursor from "react-animated-cursor"
+
+
+
+
 
 
 function App() {
@@ -76,12 +90,21 @@ function App() {
           <Route path="/SEO" element={<SearchEngineOpt />} />
           <Route path="/googleAds" element={<GoogleAds />} />
 
+          <Route path="/projects" element={<ProjectsUpd />} />
+          <Route path="/projects1" element={<ProjectDetails />} />
+          <Route path="/projects2" element={<ProjectDetails2 />} />
+          <Route path="/projects3" element={<ProjectDetails3 />} />
+          <Route path="/projects4" element={<ProjectDetails4 />} />
+          <Route path="/projects5" element={<ProjectDetails5 />} />
+          <Route path="/projects6" element={<ProjectDetails6 />} />
+
           <Route path="/" element={
             <>
               <FirstPage />
               <About />
               <Services />
-              <Projects />    
+              {/* <Projects />     */}
+              <ProjectsUpd />
               <ChooseUS />
               <LastComponent />
             </>
