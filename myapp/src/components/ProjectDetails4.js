@@ -11,11 +11,11 @@ import img8 from "./social_media/8.jpg";
 import img9 from "./social_media/9.jpg";
 import img10 from "./social_media/10.jpg";
 
-import vid1 from "./social_media/02.mp4";
-import vid2 from "./social_media/fenesta.mp4";
-import vid3 from "./social_media/instax.mp4";
-import vid4 from "./social_media/REEL.mp4";
-import vid5 from "./social_media/RENDER_ME.mp4";
+// import vid1 from "./social_media/02.mp4";
+// import vid2 from "./social_media/fenesta.mp4";
+// import vid3 from "./social_media/instax.mp4";
+// import vid4 from "./social_media/REEL.mp4";
+// import vid5 from "./social_media/RENDER_ME.mp4";
 
 function ProjectDetails4() {
   return (
