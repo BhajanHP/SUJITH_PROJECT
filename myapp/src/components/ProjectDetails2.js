@@ -10,14 +10,14 @@ import img6 from "./Amazon/15.jpg";
 function ProjectDetails2() {
   return (
     <div className="gallery-container">
-      <h1 className="gallery-title">Amazon Work Gallery</h1>
+      <h1 className="gallery-title" data-aos="fade-up">Amazon Work Gallery</h1>
       <div className="gallery-grid">
-        <img src={img1} alt="Amazon Work 1" />
-        <img src={img2} alt="Amazon Work 2" />
-        <img src={img3} alt="Amazon Work 3" />
-        <img src={img4} alt="Amazon Work 4" />
-        <img src={img5} alt="Amazon Work 5" />
-        <img src={img6} alt="Amazon Work 6" />
+        <img src={img1} alt="Amazon Work 1" data-aos="fade-up" />
+        <img src={img2} alt="Amazon Work 2" data-aos="fade-up"/>
+        <img src={img3} alt="Amazon Work 3" data-aos="fade-up"/>
+        <img src={img4} alt="Amazon Work 4" data-aos="fade-up"/>
+        <img src={img5} alt="Amazon Work 5" data-aos="fade-up"/>
+        <img src={img6} alt="Amazon Work 6" data-aos="fade-up"/>
       </div>
     </div>
   );

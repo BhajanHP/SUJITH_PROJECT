@@ -20,7 +20,7 @@ import img10 from "./social_media/10.jpg";
 function ProjectDetails4() {
   return (
     <div className="brand-container">
-      <h1 className="brand-title">Social Media</h1>
+      <h1 className="brand-title" data-aos="fade-up">Social Media</h1>
 
       {/* VIDEO SECTION */}
       {/* <h2 className="media-subtitle">Videos</h2> */}
@@ -28,10 +28,10 @@ function ProjectDetails4() {
       
 
       {/* IMAGE SECTION */}
-      <div className="brand-grid">
+      <div className="brand-grid" >
         {[img1, img2, img3, img4, img5, img6, img7, img8, img10].map(
           (img, index) => (
-            <div className="brand-card" key={`img-${index}`}>
+            <div className="brand-card" key={`img-${index}`} data-aos="fade-up">
               <img src={img} alt={`Social Media ${index + 1}`} />
             </div>
           )

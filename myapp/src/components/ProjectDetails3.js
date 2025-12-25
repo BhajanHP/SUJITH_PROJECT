@@ -3,11 +3,11 @@ import "./ProjectsUpd.css";
 function ProjectDetails3() {
   return (
     <div className="webdev-container">
-       <h1 className="webdev-title">Web Development</h1>
+       <h1 className="webdev-title" data-aos="fade-up">Web Development</h1>
         {/* <hr className="webdev-hr" /> */}
 
 
-      <div className="webdev-video-wrapper">
+      <div className="webdev-video-wrapper" data-aos="fade-up">
         <iframe
           src="https://www.youtube.com/embed/o1fidR_DNt0"
           title="Web Development Project"

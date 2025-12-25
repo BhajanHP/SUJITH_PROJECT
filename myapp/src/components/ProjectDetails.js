@@ -17,22 +17,22 @@ import img12 from "./Photography/cxvcv.jpg";
 function ProjectDetails() {
   return (
     <div className="project-details-wrapper">
-      <h2 className="project-details-title">PHOTOGRAPHY</h2>
+      <h2 className="project-details-title" data-aos="fade-up">PHOTOGRAPHY</h2>
       {/* <hr id="project-hr"></hr> */}
 
       <div className="project-details-gallery">
-        <img src={img1} alt="Project view 1" />
-        <img src={img2} alt="Project view 2" />
-        <img src={img3} alt="Project view 3" />
-         <img src={img4} alt="Project view 4" />
-         <img src={img5} alt="Project view 5" />
-        <img src={img6} alt="Project view 6" />
-        <img src={img7} alt="Project view 7" />
-         <img src={img8} alt="Project view 8" />
-         <img src={img9} alt="Project view 9" />
-        <img src={img10} alt="Project view 10" />
+        <img src={img1} alt="Project view 1" data-aos="fade-up"/>
+        <img src={img2} alt="Project view 2" data-aos="fade-up"/>
+        <img src={img3} alt="Project view 3" data-aos="fade-up"/>
+         <img src={img4} alt="Project view 4" data-aos="fade-up" />
+         <img src={img5} alt="Project view 5" data-aos="fade-up" />
+        <img src={img6} alt="Project view 6" data-aos="fade-up"/>
+        <img src={img7} alt="Project view 7" data-aos="fade-up" />
+         <img src={img8} alt="Project view 8" data-aos="fade-up"/>
+         <img src={img9} alt="Project view 9" data-aos="fade-up"/>
+        <img src={img10} alt="Project view 10" data-aos="fade-up"/>
         {/* <img src={img13} alt="Project view 11" /> */}
-         <img src={img12} alt="Project view 12" />
+         <img src={img12} alt="Project view 12" data-aos="fade-up" />
          {/* <img src={img13} alt="Project view 13" /> */}
       </div>
     </div>
