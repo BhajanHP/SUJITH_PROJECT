@@ -18,7 +18,7 @@ function ProjectsUpd() {
       </h1>
 
       <p className="projects-container-h3-1" data-aos="fade-left">
-        Dive into our portfolio and discover the remarkable success stories behind campaign
+        Dive into our portfolio & discover the remarkable success stories behind campaign
       </p>
 
       <p className="projects-container-h3" data-aos="fade-left">
