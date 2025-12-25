@@ -189,13 +189,13 @@
   background: #ffffff;
   padding: 14px;
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35); */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .brand-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  /* box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45); */
 }
 
 /* Image */
@@ -332,13 +332,13 @@
   background: #ffffff;
   padding: 12px;
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35); */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .brand-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  /* box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45); */
 }
 
 /* ===============================
@@ -351,7 +351,7 @@
   display: block;
   object-fit: contain;
   border-radius: 12px;
-  background: #000;
+  /* background: #000; */
 }
 
 /* ===============================
