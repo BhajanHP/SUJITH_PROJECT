@@ -38,7 +38,7 @@ function LastComponent(){
                        <a href="https://www.facebook.com/profile.php?id=61572486230681&sk=photos" target="_blank" rel="noopener noreferrer">
                          <img src={img10} alt="Facebook" className="footer-icon" />
                        </a>
-                       <a href="https://linkedin.com/in/branding-bots-971a71349" target="_blank" rel="noopener noreferrer">
+                       <a href="https://www.linkedin.com/company/branding-bots/" target="_blank" rel="noopener noreferrer">
                          <img src={img11} alt="LinkedIn" className="footer-icon" />
                        </a>
                      </div>
@@ -46,7 +46,7 @@ function LastComponent(){
                    <div className="footer-comp">
                     <hr className='footerhr' />
                     <p className='footer-p mb-5'> {/* mb-5 = margin-bottom: 3rem (~48px) */}
-                      © Copyright 2025, All Rights Reserved by BrandingBots
+                      © Copyright 2026, All Rights Reserved by BrandingBots
                     </p>
                   </div>
                 </MDBFooter>

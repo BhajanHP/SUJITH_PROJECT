@@ -22,9 +22,9 @@ function Footer(){
             <a href="https://www.facebook.com/profile.php?id=61572486230681&sk=photos" target="_blank" rel="noopener noreferrer">
               <img src={img10} alt="Facebook" className="footer-icon" />
             </a>
-            <a href="https://linkedin.com/in/branding-bots-971a71349" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.linkedin.com/company/branding-bots/" target="_blank" rel="noopener noreferrer">
               <img src={img11} alt="LinkedIn" className="footer-icon" />
-            </a>
+            </a> */}
           </div>
         </footer>
         <hr className='footerhr' />

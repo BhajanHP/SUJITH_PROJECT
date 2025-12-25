@@ -1,6 +1,14 @@
 .projects-wrapper {
-  padding: 40px 80px; /* more outer spacing */
+  padding: 40px 80px; /* default for desktop */
 }
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .projects-wrapper {
+    padding: 20px 15px;
+  }
+}
+
 
 .projects-wrapper {
   /* padding: 70px 80px; */
@@ -72,8 +80,6 @@
   height: 240px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
 }
 
 .project-details-gallery img:hover {
